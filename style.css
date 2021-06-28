@@ -13,7 +13,8 @@ form{
     border: 2px solid black;
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    max-width: 50%;
+    height: max-content;
     margin: 0 auto;
     background-color:rgba(27, 27, 50, 0.8);
 }
@@ -67,3 +68,51 @@ li img{
     width: 3vw;
     height: 3vh;
 }
+@media only screen and (max-width: 480px) {
+    .header {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    form {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  @media only screen and (max-width: 562px) and (min-width: 480px) {
+    .header {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    form {
+      max-width: 100%;
+      padding: 1rem 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 752px) and (min-width: 562px) {
+    .header {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    form {
+      max-width: 73%;
+      margin: 0 auto;
+      padding: 1rem 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) and (min-width: 752px) {
+    .header {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    form {
+      max-width: 95%;
+      padding: 3rem 3rem;
+    }
+  }
+
